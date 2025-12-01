@@ -1,0 +1,12 @@
+{
+    "extends": "@tiwess/toolchains/tsconfig.json",
+    "compilerOptions": {
+        "module": "ES2020",
+        "baseUrl": "./src",
+        "paths": {
+            "~shared/*": ["./shared/*"],
+            "~root/*": ["./*"]
+        }
+    },
+    "include": ["./src/**/*"]
+}
