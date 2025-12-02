@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import i18n from './i18n';
 import { theme } from '~shared/ui/theme';
+import { GlobalNav } from '~shared/ui/global_nav';
 
 const GlobalStyles = createGlobalStyle`
 	${({ theme }) => theme.global.styles};
@@ -19,6 +20,7 @@ export const App: FC = () => {
                         path="/"
                         element={
                             <>
+                                <GlobalNav />
                                 <div style={{ padding: 40 }}>Hi!</div>
                             </>
                         }
